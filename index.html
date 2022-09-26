@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,91 +11,199 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   
 
 </head>
 <body class="bg-orange-50 font-primary">
   <!-- navbar -->
-  <header class="py-2 border-b border-black">
-    <nav class="flex justify-between items-center px-4 lg:px-24 xl:px-48">
+  <header class="py-2">
+    <nav class="flex justify-between items-center px-4 lg:px-24 xl:px-48 border-b border-black py-2 relative">
       <div>
         <img src="images/elite solutions logo design-07.png" class="w-1/2 md:w-2/3" alt="elite solutions logo">
       </div>
       <div class="hidden md:block">
         <ul class="flex gap-8 items-center">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="hover:text-primary duration-200"><a href="#">Home</a></li>
+          <li class="hover:text-primary duration-200"><a href="#Services">Services</a></li>
+          <li class="hover:text-primary duration-200"><a href="#About">About Us</a></li>
+          <li class="hover:text-primary duration-200"><a href="#Contact">Contact</a></li>
         </ul>
       </div>
       <div class="md:hidden">
-        <i class="fa-solid fa-bars fa-xl"></i>
+        <button class="button-mobile-menu duration-200 rotate-180 button-mobile-menu"><i class="fa-solid fa-bars fa-xl"></i></button>
       </div>
     </nav>
+
+    <!-- mobile menu -->
+    <div class="hidden md:hidden absolute mx-auto z-10 right-0 h-full bg-orange-50 border-l border-black py-4 w-[60%] duration-200 mobile-menu">
+      <ul class="flex gap-8 items-center flex-col mt-12">
+          <li class="hover:text-primary duration-200 links"><a href="#">Home</a></li>
+          <li class="hover:text-primary duration-200 links1"><a href="#Services">Services</a></li>
+          <li class="hover:text-primary duration-200 links2"><a href="#About">About Us</a></li>
+          <li class="hover:text-primary duration-200 links3"><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+
   </header>
 
 
   <!-- section1 -->
   <div class="flex items-center justify-center px-8 lg:px-24 xl:px-48 h-screen w-full text-center">
     <div class="lg:px-24">
-      <h1 class="text-2xl lg:text-4xl font-bold text-center font-secondary">High-quality Web, Digital, and Branding solutions that deliver your goals</h1>
+      <h1 class="text-2xl lg:text-4xl font-bold text-center font-secondary text-gray-900" data-aos="fade-up" data-aos-duration="300">High-quality Web, Digital, and Branding solutions that deliver your goals</h1>
       <div class="lg:px-12">
-        <p class="text-center font-normal mt-3 font-primary text-gray-800 text-md lg:text-base">
+        <p class="text-center font-normal mt-3 font-primary text-gray-800 text-md lg:text-base" data-aos="fade-up" data-aos-delay="200">
           We are a full-service digital provider of web design and development, computer networking, and other digital services.
         </p>
       </div>
-      <button class="bg-primary px-6 py-2 text-white mt-6 rounded-sm font-normal font-primary">Contact Us</button>
+      <button class="bg-primary px-7 py-3 text-white mt-6 rounded-sm font-normal font-primary hover:scale-105 duration-200" data-aos="fade-up" data-aos-delay="400">Contact Us</button>
     </div>
   </div>
 
   <!-- section2 -->
   
-  <div class="px-8 lg:px-24 xl:px-48 flex flex-col lg:flex-row gap-8 mt-12 mb-24 flex-wrap">
-    <div class=" h-auto border border-primary p-4">
-      <h1 class="text-lg lg:text-2xl font-bold text-center font-secondary">Web design and development</h1>
+  <div class="px-8 lg:px-24 xl:px-48 flex flex-col lg:flex-row gap-8 mb-24" id="Services" >
+    <div class="h-auto border border-primary p-4 rounded-md" data-aos="fade-up">
+      <h1 class="text-lg lg:text-2xl font-bold text-center font-secondary text-gray-900">Web design and development</h1>
       <p class="text-center mt-3 text-gray-800">We specialize in custom website design and development. We have the knowledge, skills, and experience to create the perfect website for your business, organization, or personal needs.</p>
     </div>
 
-    <div class=" h-auto border border-primary p-4">
-      <h1 class="text-lg lg:text-2xl font-bold text-center font-secondary">Brand identity design</h1>
+    <div class="h-auto border border-primary p-4 rounded-md" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="text-lg lg:text-2xl font-bold text-center font-secondary text-gray-900">Brand identity design</h1>
       <p class="text-center mt-3 text-gray-800">We can create logos that help your business stand out. We offer brand identity design services that include logo design, stationery design, newsletter design, and more!</p>
     </div>
 
-    <div class=" h-auto border border-primary p-4">
-      <h1 class="text-lg lg:text-2xl font-bold text-center font-secondary">Computer networking</h1>
+    <div class="h-auto border border-primary p-4 rounded-md" data-aos="fade-up" data-aos-delay="200">
+      <h1 class="text-lg lg:text-2xl font-bold text-center font-secondary text-gray-900">Computer networking</h1>
       <p class="text-center mt-3 text-gray-800">Do you need help getting all your computers connected to each other? Are you having problems with network security? We can help. Our computer networking services include network installation as well as troubleshooting and repair.</p>
     </div>
   </div>
 
 
   <div class="px-8 lg:px-24 xl:px-48 mt-12 mb-24 mx-auto text-center lg:text-start flex items-center justify-between flex-col gap-4 lg:flex-row">
-    <div class="flex-1">
-      <img src="images/6294306-01.png" alt="">
+    <div class="flex-1" id="About">
+      <img src="images/6294306-01.png" alt="" data-aos="fade-up">
     </div>
     <div class="flex-1">
-      <h1 class="text-lg lg:text-2xl font-bold font-secondary mb-3">Who are we?</h1>
-    <p>
+      <h1 class="text-lg lg:text-2xl font-bold font-secondary mb-3 text-gray-900" data-aos="fade-up">Who are we?</h1>
+    <p data-aos="fade-up">
       We're a team of passionate people, who are always ready to take on new challenges and create something outstanding based in Sri Lanka. We offer a wide range of digital services that will help you to build your dream website or brand. You will have access to all the latest web design trends, and our team of experts will ensure that your new site is not only visually stunning but also optimized for conversion.
     </p>
-    <button class="bg-primary px-6 py-2 text-white mt-6 rounded-sm font-normal font-primary">Contact Us</button>
+    <button class="bg-primary px-6 py-2 text-white mt-6 rounded-sm font-normal font-primary hover:scale-105 duration-200" data-aos="fade-up">Contact Us</button>
     </div>
   </div>
 
   <div class="px-8 lg:px-24 xl:px-48 mt-12 mb-24 mx-auto text-center lg:text-start flex items-center justify-between flex-col gap-4 lg:flex-row">
     <div class="flex-1 md:order-last">
-      <img src="images/designer_set_1 [Converted]-01.png" alt="">
+      <img src="images/designer_set_1 [Converted]-01.png" alt="" data-aos="fade-up">
     </div>
     <div class="flex-1">
-      <h1 class="text-lg lg:text-2xl font-bold font-secondary mb-3">Why you should choose us?</h1>
-    <p>
+      <h1 class="text-lg lg:text-2xl font-bold font-secondary mb-3 text-gray-900" data-aos="fade-up">Why you should choose us?</h1>
+    <p data-aos="fade-up">
       We work with all types of businesses from small shops to large corporations. With such a diverse clientele, we've become specialists in crafting websites and brand identities to suit our customers needs.
       <br>
       Whether you need your website designed, built, or optimized, we are here to help. We also offer computer networking services to ensure that your devices are running smoothly and efficiently.
     </p>
-    <button class="bg-primary px-6 py-2 text-white mt-6 rounded-sm font-normal font-primary">Contact Us</button>
+    <button class="bg-primary px-6 py-2 text-white mt-6 rounded-sm font-normal font-primary hover:scale-105 duration-200" data-aos="fade-up">Contact Us</button>
     </div>
   </div>
+
+  <hr>
+
+  <!-- contact -->
+  <div class="px-8 lg:px-24 xl:px-48 mt-12 mb-6 mx-auto text-center" id="Contact">
+    <h1 class="text-lg lg:text-2xl font-bold font-secondary text-gray-900" data-aos="fade-up">Have a Project in Mind?</h1>
+    <p data-aos="fade-up">we are here to help.</p>
+    <button class="bg-primary px-6 py-2 text-white mt-6 rounded-sm font-normal font-primary hover:scale-105 duration-200" data-aos="fade-up">Send a Message</button>
+  </div>
+  </div>
+
+  <div class="px-8 lg:px-24 xl:px-48 mb-24 text-center mx-auto flex flex-col items-center" data-aos="fade-up">
+    <div class="flex items-center gap-2 mt-1">
+      <i class="fa-regular fa-compass"></i>
+      <p>Gampaha - Sri Lanka</p>
+    </div>
+    <div class="flex items-center gap-2 mt-1">
+      <i class="fa-regular fa-address-book"></i>
+      <p>+94 76 118 5641 / +94 71 963 5705</p>
+    </div>
+    <div class="flex items-center gap-2 mt-1">
+      <i class="fa-regular fa-envelope"></i>
+      <p>contact1elitesolutions@gmail.com</p>
+    </div>
+  </div>
+
+<!-- footer -->
+<footer class=" bg-gray-900 shadow px-8 lg:px-24 xl:px-48 py-8">
+  <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+          <img src="images/elite solutions logo design-07.png" class="mr-3 h-8" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Elite Solutions</span>
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+          <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+          </li>
+          <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6 ">Services</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline">Contact</a>
+          </li>
+      </ul>
+  </div>
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">Elite Solutions</a>. All Rights Reserved.
+  </span>
+</footer>
+
+<script>
+
+  const btn = document.querySelector("button.button-mobile-menu");
+  const menu = document.querySelector(".mobile-menu");
+
+  const links = document.querySelector(".links");
+  const links1 = document.querySelector(".links1");
+  const links2 = document.querySelector(".links2");
+  const links3 = document.querySelector(".links3");
+
+  links.addEventListener("click", ()=> {
+    
+    menu.classList.toggle("hidden");
+  });
+
+  links1.addEventListener("click", ()=> {
+    
+    menu.classList.toggle("hidden");
+  });
+
+  links2.addEventListener("click", ()=> {
+    
+    menu.classList.toggle("hidden");
+  });
+
+  links3.addEventListener("click", ()=> {
+    
+    menu.classList.toggle("hidden");
+  });
+
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("rotate-180");
+    menu.classList.toggle("hidden");
+  });
+
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 </body>
 </html>
